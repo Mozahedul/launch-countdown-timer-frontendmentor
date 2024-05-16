@@ -1,31 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Launch countdown timer</title>
+    <title>Frontend Mentor | Launch countdown timer</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="days">
+        <h1 id="counter">We're launching soon</h1>
+        <div class="boxes">
+          <div class="box">
+            <div class="box-btn">
+              <strong id="days">08</strong>
+              <div class="middle-bar">
+                <span class="dot-left"></span>
+                <span class="horizontal-bar"></span>
+                <span class="dot-right"></span>
+              </div>
+            </div>
+            <h2 class="box-date">Days</h2>
+          </div>
+          <div class="box">
+            <div class="box-btn">
+              <strong id="hours">23</strong>
+              <div class="middle-bar">
+                <span class="dot-left"></span>
+                <span class="horizontal-bar"></span>
+                <span class="dot-right"></span>
+              </div>
+            </div>
+            <h2 class="box-date">Hours</h2>
+          </div>
+          <div class="box">
+            <div class="box-btn">
+              <strong id="minutes">55</strong>
+              <div class="middle-bar">
+                <span class="dot-left"></span>
+                <span class="horizontal-bar"></span>
+                <span class="dot-right"></span>
+              </div>
+            </div>
+            <h2 class="box-date">Minutes</h2>
+          </div>
+          <div class="box">
+            <div class="box-btn">
+              <strong id="seconds">41</strong>
+              <div class="middle-bar">
+                <span class="dot-left"></span>
+                <span class="horizontal-bar"></span>
+                <span class="dot-right"></span>
+              </div>
+            </div>
+            <h2 class="box-date">Seconds</h2>
+          </div>
+        </div>
+      </div>
+      <div class="pattern">
+        <a href="https://facebook.com">
+          <img src="./images/icon-facebook.svg" alt="facebook icon" />
+        </a>
+        <a href="https://pinterest.com" target="_blank">
+          <img src="./images/icon-pinterest.svg" alt="pinterest icon" />
+        </a>
+        <a href="https://instagram.com">
+          <img src="./images/icon-instagram.svg" alt="instagram icon" />
+        </a>
+      </div>
+    </main>
+    <!-- <footer></footer> -->
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  We're launching soon
+    <!-- 
 
   Days
   Hours
   Minutes
-  Seconds
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  Seconds -->
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+
+    <script src="./countdown.js"></script>
+  </body>
 </html>

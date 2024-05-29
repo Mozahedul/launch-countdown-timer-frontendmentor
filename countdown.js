@@ -10,7 +10,7 @@ const seconds = document.getElementById("seconds");
 //   })
 // })
 
-const countDownTime = new Date("May 30, 2024, 23:32:25").getTime();
+const countDownTime = new Date("September 30, 2024, 23:32:25").getTime();
 
 setInterval(() => {
   const currentTime = new Date().getTime();
